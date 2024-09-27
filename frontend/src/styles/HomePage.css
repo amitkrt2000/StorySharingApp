@@ -1,0 +1,16 @@
+.homepage {
+    padding: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .homepage {
+      padding: 20px 40px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .homepage {
+      padding: 10px;
+    }
+  }
+  

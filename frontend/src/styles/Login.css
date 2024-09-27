@@ -1,0 +1,141 @@
+/* Register Modal container */
+.login-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+    z-index: 1000;
+  }
+  
+  /* Modal content box */
+  .login-content {
+    width: 624px;
+    height: 382px;
+    background-color: #fff;
+    border-radius: 20px ;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Close button styling (as an image) */
+  .close-button {
+    position: absolute;
+    top: 15px; /* Adjust according to layout */
+    right: 15px; /* Adjust according to layout */
+    width: 35.64px;
+    height: 35.64px;
+    background-color: transparent; /* Image already has color */
+    cursor: pointer;
+  }
+  
+  
+  .login-heading {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  /* Form styling */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Form group styling with label and input aligned side by side */
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-size: 26px;
+    font-weight: 500;
+    margin-right: 15px; /* Space between label and input */
+    flex-basis: 30%; /* Label takes 30% of width */
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    flex-basis: 40%; /* Input takes 70% of width */
+  }
+  
+  .password-input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .show-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  
+  .login-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px; /* Reduced padding for a smaller button */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 150px; /* Make the button smaller */
+    text-align: center;
+    margin-top: 20px; /* Centering the button */
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .login-content {
+      width: 90%;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .login-heading {
+      font-size: 20px;
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      font-size: 14px;
+    }
+  
+    .login-button {
+      font-size: 14px;
+      width: 100px;
+    }
+  
+    .close-button {
+      width: 30px;
+      height: 30px;
+    }
+  
+    label {
+      font-size: 14px;
+    }
+  }
+  

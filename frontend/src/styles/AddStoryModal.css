@@ -1,0 +1,166 @@
+/* Main Modal Styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+.modal-content {
+    width: 682px;
+    height: 538px;
+    background: white;
+    padding: 20px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+/* Close Icon */
+.close-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+  
+/* Box Container */
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+  
+.box {
+    width: 83.87px;
+    height: 68.09px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box.active {
+    background: #d0e6ff;
+    border: 2px solid #73abff;
+}
+  
+/* Remove Box Icon */
+.remove-icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+  
+/* Add More */
+.add-more {
+    cursor: pointer;
+    color: blue;
+}
+  
+/* Form Fields */
+.form {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 10px;
+    margin-top: 20px;
+}
+  
+.label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 23.44px;
+}
+  
+.input-field {
+    width: 270.37px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+  
+.description {
+    height: 104.92px;
+}
+  
+/* Button Styles */
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+  
+.btn {
+    width: 115.87px;
+    height: 41.3px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: large;
+}
+  
+.previous {
+    background: #7EFF73;
+}
+  
+.next {
+    background: #73ABFF;
+}
+  
+.post {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #FF7373;
+}
+  
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+      height: auto;
+    }
+  
+    .box-container {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  
+    .input-field {
+      width: 100%;
+    }
+  
+    .button-container {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .btn {
+      flex: 1;
+      margin-bottom: 10px;
+      min-width: 130px;
+    }
+  
+    .post {
+      right: 10px;
+      bottom: 10px;
+    }
+}

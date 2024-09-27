@@ -1,0 +1,39 @@
+.categories {
+    display: flex;
+    padding-top: 10px;
+    overflow-x: auto;
+  }
+  
+  .category-box {
+    width: 235px;
+    height: 235px;
+    background-color: #2b28288e;
+    margin-right: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .category-text {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .category-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .category-top {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

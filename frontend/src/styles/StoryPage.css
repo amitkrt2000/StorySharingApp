@@ -1,0 +1,28 @@
+.story-page {
+    padding: 20px;
+  }
+  
+  .slides {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .slide {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .slide-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
