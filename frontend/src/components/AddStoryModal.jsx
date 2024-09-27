@@ -94,17 +94,22 @@ const AddStoryModal = ({ onClose }) => {
     }
   
     try {
-        const response = await fetch('http://localhost:3000/api/story/create', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`, // Correct backticks
-          },
-          body: JSON.stringify({
-            slides: slideData,
-          }),
-        });
-      
+      // Convert slideData from object to array
+      const slidesArray = Object.values(slideData); // This is important for backend compatibility
+  
+      const response = await fetch('http://localhost:3000/api/story/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`, // Correct backticks
+        },
+        body: JSON.stringify({
+          heading: slideData[1]?.heading || '', // Assuming you're using the first slide's heading for the story
+          description: slideData[1]?.description || '', // Same for description
+          slides: slidesArray, // Send slides as an array
+          category: slideData[1]?.category || 'select' // Use category of the first slide
+        }),
+      });
   
       if (response.ok) {
         // Success response
@@ -123,7 +128,6 @@ const AddStoryModal = ({ onClose }) => {
       setLoading(false);
     }
   };
-  
   
   return (
     <div className="modal">
@@ -181,7 +185,7 @@ const AddStoryModal = ({ onClose }) => {
           >
             <option value="select">Select category</option>
             <option value="food">Food</option>
-            <option value="health">Health and Fitness</option>
+            <option value="health & fitness">Health and Fitness</option>
             <option value="travel">Travel</option>
             <option value="movie">Movie</option>
             <option value="education">Education</option>

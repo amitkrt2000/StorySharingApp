@@ -1,3 +1,87 @@
 Error: read ETIMEDOUT
     at TLSWrap.onStreamRead (node:internal/stream_base_commons:218:20)
 POST||/api/auth/login||::1||Fri Sep 27 2024 11:23:34 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: heading: Path `heading` is required., description: Path `description` is required., slides: A story must have between 3 and 6 slides, category: Path `category` is required.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 13:50:18 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:17:05 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:17:31 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:17:32 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:19:39 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:19:40 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:19:41 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:20:55 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:20:57 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:20:58 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:21:00 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health & fitness` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:21:18 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health & fitness` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:21:19 GMT+0530 (India Standard Time)
+ValidationError: Story validation failed: category: `health & fitness` is not a valid enum value for path `category`.
+    at Document.invalidate (/Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3312:32)
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/document.js:3073:17
+    at /Users/amitkumartiwari/Documents/finalproject/Backend/node_modules/mongoose/lib/schemaType.js:1388:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+POST||/api/story/create||::1||Fri Sep 27 2024 14:21:20 GMT+0530 (India Standard Time)
